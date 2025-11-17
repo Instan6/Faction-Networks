@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faction Networks – Teasers</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; color:#fff; overflow-x:hidden; position:relative; background:#0f0f0f; }
+#animated-bg { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-2; background: linear-gradient(120deg, #0f0f1e, #1a1a2e, #090921); background-size:400% 400%; animation: gradientMove 15s ease infinite; }
+@keyframes gradientMove { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
+.glow-overlay { position: fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at center, rgba(0,162,255,0.2), transparent 70%); z-index:-1; pointer-events:none; }
+header { width:100%; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; background: rgba(0,0,0,0.65); backdrop-filter: blur(10px); position:sticky; top:0; z-index:10; }
+.logo-area { display:flex; align-items:center; gap:15px; }
+.main-logo { height:50px; }
+.navbar a { margin:0 15px; text-decoration:none; color:#ccc; font-size:18px; transition:0.2s; }
+.navbar a:hover { color:white; }
+        .hero { text-align:center; margin-top:50px; }
+        .hero h1 { font-size:48px; margin-bottom:15px; }
+        .hero p { font-size:20px; margin-bottom:25px; }
+.content { padding:60px; max-width:1400px; margin:0 auto; }
+.teaser-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; margin-top:50px; }
+.teaser-card { background:#141414; border-radius:15px; overflow:hidden; box-shadow:0 0 25px rgba(0,0,0,0.45); transition:0.2s; }
+.teaser-card:hover { transform:translateY(-5px); }
+.teaser-card img { width:100%; height:180px; object-fit:cover; }
+.teaser-content { padding:15px; }
+.teaser-title { font-size:20px; font-weight:bold; margin-bottom:8px; }
+.teaser-text { font-size:16px; color:#ccc; }
+</style>
+</head>
+<body>
+<div id="animated-bg"></div>
+<div class="glow-overlay"></div>
+<header>
+<div class="logo-area">
+<img src="YOUR_LOGO_URL" class="main-logo" alt="Logo">
+<div class="logo-text">Faction Networks</div>
+</div>
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="teasers.html">Teasers</a>
+<a href="announcements.html">Announcements</a>
+<a href="more.html">More</a>
+</nav>
+</header>
+<main class="content">
+        <!-- Home Hero -->
+        <section class="hero">
+            <h1>Faction Networks Teasers</h1>
+            <p>Coming Soon!</p>
+        </section>
+
+<!--<main class="content">
+<section class="teaser-grid">
+<div class="teaser-card"><img src="https://i.imgur.com/n7fQH98.jpeg" alt="Teaser"><div class="teaser-content"><div class="teaser-title">New Police System</div><div class="teaser-text">MDT improvements, vehicle upgrades, and callout enhancements.</div></div></div>
+<div class="teaser-card"><img src="https://i.imgur.com/COV4EwT.jpeg" alt="Teaser"><div class="teaser-content"><div class="teaser-title">New Criminal Activities</div><div class="teaser-text">Engaging heists, robberies, and black market mechanics.</div></div></div>
+<div class="teaser-card"><img src="https://i.imgur.com/x9xH2wL.jpeg" alt="Teaser"><div class="teaser-content"><div class="teaser-title">Map Expansions</div><div class="teaser-text">Explore new interiors, locations, and custom areas.</div></div></div>
+</section>-->
+</main>
+</body>
+</html>

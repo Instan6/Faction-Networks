@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faction Networks – Announcements</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; color:#fff; overflow-x:hidden; position:relative; background:#0f0f0f; }
+#animated-bg { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-2; background: linear-gradient(120deg, #0f0f1e, #1a1a2e, #090921); background-size:400% 400%; animation: gradientMove 15s ease infinite; }
+@keyframes gradientMove { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
+.glow-overlay { position: fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at center, rgba(0,162,255,0.2), transparent 70%); z-index:-1; pointer-events:none; }
+header { width:100%; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; background: rgba(0,0,0,0.65); backdrop-filter: blur(10px); position:sticky; top:0; z-index:10; }
+.logo-area { display:flex; align-items:center; gap:15px; }
+.main-logo { height:50px; }
+.navbar a { margin:0 15px; text-decoration:none; color:#ccc; font-size:18px; transition:0.2s; }
+.navbar a:hover { color:white; }
+.content { padding:60px; max-width:1200px; margin:0 auto; }
+        .hero { text-align:center; margin-top:50px; }
+        .hero h1 { font-size:48px; margin-bottom:15px; }
+        .hero p { font-size:20px; margin-bottom:25px; }
+.news-container { display:flex; flex-direction:column; gap:25px; margin-top:50px; }
+.news-card { background:#141414; border-radius:15px; padding:20px; box-shadow:0 0 25px rgba(0,0,0,0.45); transition:0.2s; }
+.news-card:hover { transform:translateY(-5px); }
+.news-title { font-size:22px; font-weight:bold; margin-bottom:5px; }
+.news-date { color:#aaa; font-size:14px; margin-bottom:10px; }
+.news-text { font-size:16px; color:#ccc; line-height:1.5; }
+</style>
+</head>
+<body>
+<div id="animated-bg"></div>
+<div class="glow-overlay"></div>
+<header>
+<div class="logo-area">
+<img src="YOUR_LOGO_URL" class="main-logo" alt="Logo">
+<div class="logo-text">Faction Networks</div>
+</div>
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="teasers.html">Teasers</a>
+<a href="announcements.html">Announcements</a>
+<a href="more.html">More</a>
+</nav>
+</header>
+<main class="content">
+        <!-- Home Hero -->
+        <section class="hero">
+            <h1>Faction Announcements</h1>
+            <p>Stay updated with new Announcements every week!</p>
+        </section>
+
+<main class="content">
+<section class="news-container">
+<div class="news-card"><div class="news-title">Server Launch</div><div class="news-date">12 Nov 2025</div><div class="news-text">Faction Networks officially opens to the public with new scripts and features.</div></div>
+<div class="news-card"><div class="news-title">Major Update Coming</div><div class="news-date">8 Nov 2025</div><div class="news-text">Expect a new police system, economy tweaks, and bug fixes.</div></div>
+<div class="news-card"><div class="news-title">Community Feedback</div><div class="news-date">1 Nov 2025</div><div class="news-text">We are reviewing suggestions submitted through Discord.</div></div>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faction Networks – Jobs</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; color:#fff; overflow-x:hidden; position:relative; background:#0f0f0f; }
+#animated-bg { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-2; background: linear-gradient(120deg, #0f0f1e, #1a1a2e, #090921); background-size:400% 400%; animation: gradientMove 15s ease infinite; }
+@keyframes gradientMove { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
+.glow-overlay { position: fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at center, rgba(0,162,255,0.2), transparent 70%); z-index:-1; pointer-events:none; }
+header { width:100%; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; background: rgba(0,0,0,0.65); backdrop-filter: blur(10px); position:sticky; top:0; z-index:10; }
+.logo-area { display:flex; align-items:center; gap:15px; }
+.main-logo { height:50px; }
+.navbar a { margin:0 15px; text-decoration:none; color:#ccc; font-size:18px; transition:0.2s; }
+.navbar a:hover { color:white; }
+.content { padding:60px; max-width:1400px; margin:0 auto; }
+        .hero { text-align:center; margin-top:50px; }
+        .hero h1 { font-size:48px; margin-bottom:15px; }
+        .hero p { font-size:20px; margin-bottom:25px; }
+        .jobs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:25px; margin-top:50px; }
+        .job-card { background:#141414; border-radius:15px; padding:20px; box-shadow:0 0 25px rgba(0,0,0,0.45); transition:0.2s; }
+        .job-card:hover { transform:translateY(-5px); }
+        .job-title { font-size:22px; font-weight:bold; margin-bottom:10px; }
+        .job-desc { font-size:16px; color:#ccc; }
+        .apply-btn { margin-top:15px; display:inline-block; padding:10px 20px; background:#2563eb; border-radius:10px; color:white; text-decoration:none; }
+        .apply-btn:hover { background:#1d4ed8; }
+</style>
+</head>
+<body>
+<div id="animated-bg"></div>
+<div class="glow-overlay"></div>
+<header>
+<div class="logo-area">
+<img src="YOUR_LOGO_URL" class="main-logo" alt="Logo">
+<div class="logo-text">Faction Networks</div>
+</div>
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="teasers.html">Teasers</a>
+<a href="announcements.html">Announcements</a>
+<a href="more.html">More</a>
+</nav>
+</header>
+
+<main class="content">
+        <!-- Home Hero -->
+        <section class="hero">
+            <h1>Faction Jobs</h1>
+            <p>Appy for jobs to kick off your way of making money!</p>
+        </section>
+
+
+<section class="jobs-grid">
+    <div class="job-card">
+        <div class="job-title">Victoria Police</div>
+        <div class="job-desc">Join the frontline of law enforcement in Victoria. Patrol the streets, respond to calls, investigate crimes, and ensure the safety and security of the community. Work in a dynamic and immersive environment where teamwork and decision-making are key to keeping the city safe.</div>
+        <a href="#" class="apply-btn" target="_blank">Coming Soon!</a>
+    </div>
+
+    <div class="job-card">
+        <div class="job-title">Ambulance Victoria</div>
+        <div class="job-desc">Be a lifesaver as part of Ambulance Victoria. Respond to medical emergencies, provide critical care, and transport patients safely. Work alongside a dedicated team to deliver fast, professional, and compassionate medical support across the city.</div>
+        <a href="#" class="apply-btn" target="_blank">Coming Soon!</a>
+    </div>
+
+    <div class="job-card">
+        <div class="job-title">Fire & Rescue</div>
+        <div class="job-desc">Protect lives and property as a firefighter with Fire Rescue Victoria. Respond to fires, vehicle accidents, and rescue operations, using specialized training and equipment. Work in a high-stakes, team-oriented environment that challenges and rewards your skills.</div>
+        <a href="#" class="apply-btn" target="_blank">Coming Soon!</a>
+    </div>
+
+    <div class="job-card">
+        <div class="job-title">Civilian Jobs</div>
+        <div class="job-desc">Garbage collection, trucking, delivery, taxi, and more.</div>
+        <a class="apply-btn" target="_blank">See in-game city hall!</a>
+    </div>
+</section>
+
+</main>
+</body>
+</html>

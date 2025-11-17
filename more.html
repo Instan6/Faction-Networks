@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faction Networks – More</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: Arial, sans-serif; color:#fff; overflow-x:hidden; position:relative; background:#0f0f0f; }
+#animated-bg { position: fixed; top:0; left:0; width:100%; height:100%; z-index:-2; background: linear-gradient(120deg, #0f0f1e, #1a1a2e, #090921); background-size:400% 400%; animation: gradientMove 15s ease infinite; }
+@keyframes gradientMove { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
+.glow-overlay { position: fixed; top:0; left:0; width:100%; height:100%; background: radial-gradient(circle at center, rgba(0,162,255,0.2), transparent 70%); z-index:-1; pointer-events:none; }
+header { width:100%; padding:20px 40px; display:flex; justify-content:space-between; align-items:center; background: rgba(0,0,0,0.65); backdrop-filter: blur(10px); position:sticky; top:0; z-index:10; }
+.logo-area { display:flex; align-items:center; gap:15px; }
+.main-logo { height:50px; }
+.navbar a { margin:0 15px; text-decoration:none; color:#ccc; font-size:18px; transition:0.2s; }
+.navbar a:hover { color:white; }
+.content { padding:60px; max-width:1200px; margin:0 auto; text-align:center; }
+        .hero { text-align:center; margin-top:50px; }
+        .hero h1 { font-size:48px; margin-bottom:15px; }
+        .hero p { font-size:20px; margin-bottom:25px; }
+h1 { font-size:48px; margin-bottom:20px; }
+p { font-size:18px; color:#ccc; }
+</style>
+</head>
+<body>
+<div id="animated-bg"></div>
+<div class="glow-overlay"></div>
+<header>
+<div class="logo-area">
+<img src="YOUR_LOGO_URL" class="main-logo" alt="Logo">
+<div class="logo-text">Faction Networks</div>
+</div>
+<nav class="navbar">
+<a href="index.html">Home</a>
+<a href="jobs.html">Jobs</a>
+<a href="teasers.html">Teasers</a>
+<a href="announcements.html">Announcements</a>
+<a href="more.html">More</a>
+</nav>
+</header>
+<main class="content">
+<h1>More Features Coming Soon</h1>
+<p>Stay tuned for additional tools, community events, guides, and extra content to enhance your experience on Faction Networks.</p>
+</main>
+</body>
+</html>

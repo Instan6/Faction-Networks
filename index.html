@@ -1,0 +1,174 @@
+<!-- Global Background Gradient + Glow Template for All Pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faction Networks</title>
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: Arial, sans-serif; color:#fff; overflow-x:hidden; position:relative; background:#0f0f0f; }
+
+        /* Animated Gradient Background */
+        #animated-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            background: linear-gradient(120deg, #0f0f1e, #1a1a2e, #090921);
+            background-size: 400% 400%;
+            animation: gradientMove 15s ease infinite;
+        }
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Glow overlay */
+        .glow-overlay {
+            position: fixed;
+            top:0; left:0; width:100%; height:100%;
+            background: radial-gradient(circle at center, rgba(0,162,255,0.2), transparent 70%);
+            z-index: -1; pointer-events: none;
+        }
+
+        /* Header / Navbar */
+        header {
+            width:100%; padding:20px 40px; display:flex; justify-content:space-between; align-items:center;
+            background: rgba(0,0,0,0.65); backdrop-filter: blur(10px); position:sticky; top:0; z-index:10;
+        }
+        .logo-area { display:flex; align-items:center; gap:15px; }
+        .main-logo { height:50px; }
+        .navbar a { margin:0 15px; text-decoration:none; color:#ccc; font-size:18px; transition:0.2s; }
+        .navbar a:hover { color:white; }
+
+        /* Page content */
+        .content { padding:60px; max-width:1400px; margin:0 auto; }
+
+        /* Home hero */
+        .hero { text-align:center; margin-top:50px; }
+        .hero h1 { font-size:48px; margin-bottom:15px; }
+        .hero p { font-size:20px; margin-bottom:25px; }
+        .cta-button { padding:12px 25px; font-weight: bold; background:#2563eb; border-radius:10px; color:white; text-decoration:none; transition:0.2s; }
+        .cta-button:hover { background:#1d4ed8; }
+
+        /* News cards */
+        .news-container { display:flex; flex-direction:column; gap:25px; margin-top:50px; }
+        .news-card { background:#141414; border-radius:15px; padding:20px; box-shadow:0 0 25px rgba(0,0,0,0.45); }
+        .news-title { font-size:22px; font-weight:bold; margin-bottom:8px; }
+        .news-date { font-size:14px; color:#aaa; margin-bottom:10px; }
+        .news-text { font-size:16px; color:#ccc; line-height:1.5; }
+        /*Staff Section*/
+        .staff-section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.staff-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    /*text-shadow: 0 0 10px rgba(0,162,255,0.7);*/
+}
+
+.staff-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.staff-card {
+    background: rgba(20,20,20,0.85);
+    padding: 15px;
+    border-radius: 15px;
+    width: 150px;
+    box-shadow: 0 0 20px #1b2135;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.staff-card img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.staff-name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.staff-role {
+    font-size: 14px;
+    color: #ccc;
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Animated Gradient -->
+    <div id="animated-bg"></div>
+    <div class="glow-overlay"></div>
+
+    <header>
+        <div class="logo-area">
+            <img src="YOUR_LOGO_URL" class="main-logo" alt="Logo">
+            <div class="logo-text">Faction Networks</div>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="teasers.html">Teasers</a>
+            <a href="announcements.html">Announcements</a>
+            <a href="more.html">More</a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <!-- Home Hero -->
+        <section class="hero">
+            <h1>Welcome to Faction Networks</h1>
+            <p>Faction Networks brings you insights to the most Amazing & Realistic Semi-RP Australian Fivem Community. Come have a peak... and see what you're missing out on!.</p>
+            <a href="https://discord.gg/factionnetworks" class="cta-button">Join the Discord</a>
+            <a href="https://servers.fivem.net/servers/detail/ep8a4b" class="cta-button">Connect to Server</a>
+        </section>
+
+
+        <!-- Announcements Section -->
+        <section class="news-container">
+            <div class="news-card"><div class="news-title">Estimated Beta Launch</div><div class="news-date">Early 2026</div><div class="news-text">Faction Networks officially opens to the public with new scripts and features.</div></div>
+            <div class="news-card"><div class="news-title">Community Meeting</div><div class="news-date">10th January 2026</div><div class="news-text">Management wants to hear from you! Give us your feedback, thoughts and how we can improve!</div></div>
+            <div class="news-card"><div class="news-title">Community Feedback</div><div class="news-date">1 January 2026</div><div class="news-text">We are reviewing suggestions submitted through Discord.</div></div>
+        </section>
+
+        <div class="staff-section">
+    <h2>Our Executive Team</h2>
+    <div class="staff-container">
+        <div class="staff-card">
+            <img src="https://i.imgur.com/abcd123.png" alt="Staff Member">
+            <div class="staff-name">Instant</div>
+            <div class="staff-role">Faction Management Team / Lead Developer</div>
+        </div>
+        <div class="staff-card">
+            <img src="https://i.imgur.com/efgh456.png" alt="Staff Member">
+            <div class="staff-name">Elusive</div>
+            <div class="staff-role">Faction Management Team</div>
+        </div>
+        <div class="staff-card">
+            <img src="https://i.imgur.com/ijkl789.png" alt="Staff Member">
+            <div class="staff-name">Twilight</div>
+            <div class="staff-role">Community Management Team</div>
+        </div>
+        <!-- Add more staff members as needed -->
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
