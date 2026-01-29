@@ -1,0 +1,15 @@
+{
+  "ram_not_found":{
+    "title": "Item não encontrado!",
+    "subtitle": "Tens de ter um breaching ram para fazeres isso!"
+  },
+  "damaged_door": "~r~A porta está danificada.~n~~y~ Usa Left-alt para a reparares!",
+  "door_fixed": {
+    "title": "Porta reparada!",
+    "subtitle": "Reparaste a porta!"
+  },
+  "target": {
+    "ram_breach": "RAM Breach",
+    "fix_door": "Reparar a porta"
+  }
+}

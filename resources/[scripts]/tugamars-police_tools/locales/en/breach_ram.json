@@ -1,0 +1,15 @@
+{
+  "ram_not_found":{
+    "title": "Item not found!",
+    "subtitle": "You need to have a breaching ram to do that!"
+  },
+  "damaged_door": "~r~The door is damaged.~n~~y~ Left-alt to fix it",
+  "door_fixed": {
+    "title": "Door Fixed",
+    "subtitle": "You have repaired the door!",
+  },
+  "target": {
+    "ram_breach": "RAM Breach",
+    "fix_door": "Fix Door"
+  }
+}

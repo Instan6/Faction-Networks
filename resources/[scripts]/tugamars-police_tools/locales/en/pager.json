@@ -1,0 +1,61 @@
+{
+  "channel_not_found":"Pager - Channel not found!",
+  "already_subscribed": "Pager - You are already subscribed (automatically)!",
+  "subscribe_no_permission": "Pager - You don't have permissions to subscribe this channel!",
+  "sucessfully_subscribed": "Pager - Sucessfully subscribed channel: %s!",
+  "sucessfully_unsubscribed": "Pager - Sucessfully unsubscribed channel: %s!",
+  "not_subscribed": "Pager - You aren't subscribed to this channel!",
+  "no_page_permission": "Pager - You don't have permissions to page this channel!",
+  "discord": {
+    "default_title": "Pager",
+    "default_message": "New Pager Received"
+  },
+  "pager_menu": {
+    "title": "Pager",
+    "page_channel": {
+      "title": "Page Channel",
+      "description":"Send a pager to a specific channel"
+    },
+    "subscribe_channel": {
+      "title": "Subscribe Channel",
+      "description":"Subscribe to a channel"
+    },
+    "unsubscribe_channel": {
+      "title": "Unsubscribe Channel",
+      "description":"Unsubscribe from a channel"
+    }
+  },
+  "page_input": {
+    "select": {
+      "label": "Channel",
+      "description": "Channel to broadcast this message to"
+    },
+    "input": {
+      "label": "Message",
+      "description": "Message to broadcast"
+    }
+  },
+  "subscribe_input": {
+    "label": "Channel",
+    "description": "Channel to subscribe to"
+  },
+  "unsubscribe_input": {
+    "label": "Channel",
+    "description": "Channel to unsubscribe to"
+  },
+  "client_errors": {
+    "no_channels": {
+      "title": "Pager - No channels available",
+      "description": "You don't have access to broadcast on any pager channels!"
+    },
+    "no_channels_sub": {
+      "title": "Pager - No channels available",
+      "description": "You don't have access to subscribe any pager channels!"
+    },
+    "no_channels_subscribed": {
+      "title": "Pager - No channels available",
+      "description": "You are not subscribing any channels!"
+    },
+    "item_required": "You need to have item %s to do this!"
+  }
+}

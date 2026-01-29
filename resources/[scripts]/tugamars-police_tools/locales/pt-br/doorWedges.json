@@ -1,0 +1,22 @@
+{
+  "item_not_found":{
+    "title": "Item não encontrado!",
+    "subtitle": "Precisas de ter uma door wedge para poderes fazer isso!"
+  },
+  "wedged_door": {
+    "title": "Door Wedged!",
+    "subtitle": "A porta está agora bloqueada, mas qualquer um pode remover a wedge...",
+  },
+  "door_fixed": {
+    "title": "Door Wedge!",
+    "subtitle": "A porta já não está wedged."
+  },
+  "door_not_found": {
+    "title": "No Wedge",
+    "subtitle": "Nenhuma porta bloqueada perto de ti!"
+  },
+  "target": {
+    "add_wedge": "Add wedge",
+    "remove_wedge": "Remove wedge"
+  }
+}

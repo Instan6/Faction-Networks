@@ -1,0 +1,22 @@
+{
+  "item_not_found":{
+    "title": "Item not found!",
+    "subtitle": "You need to have a door wedge to do that!",
+  },
+  "wedged_door": {
+    "title": "Door Wedged!",
+    "subtitle": "This door is now wedged, but that doesn't mean someone can't remove it...",
+  },
+  "door_fixed": {
+    "title": "Door Wedge!",
+    "subtitle": "This door is not wedged anymore."
+  },
+  "door_not_found": {
+    "title": "No Wedge",
+    "subtitle": "No door wedge was found near you!",
+  },
+  "target": {
+    "add_wedge": "Add wedge",
+    "remove_wedge": "Remove wedge"
+  }
+}

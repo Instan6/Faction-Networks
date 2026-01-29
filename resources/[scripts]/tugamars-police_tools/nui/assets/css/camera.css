@@ -1,0 +1,235 @@
+.camera-ui {
+    background-image: url("../imgs/camera_view_finder.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.camera-lcd {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url("../imgs/camera-lcd.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.camera-lcd-inner, .camera-lcd-bg {
+    width: 43%;
+    height: 59%;
+    position: absolute;
+    left: 22%;
+    top: 38%;
+    border-radius: 10px;
+    padding-left: 25px;
+    background-color: #211f1f;
+}
+
+.camera-lcd-bg {
+    z-index:-1;
+}
+
+.camera-lcd-inner {
+    width: 41.6%;
+    height: 57.4%;
+    border-radius: 20px;
+}
+
+.camera-lcd h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #e1d30f;
+}
+
+#cam-select-sd-card {
+    display: none;
+    height: 100%;
+}
+
+#select-sdcard-options {
+    list-style: none;
+    padding-left: 0;
+    width: 90%;
+    overflow-y: auto;
+    height: 95%;
+    padding-right: 20px;
+}
+
+#select-sdcard-options > li {
+    padding: 10px;
+    margin-bottom: 15px;
+    color:#FFF;
+    border: 1px solid #e1d30f;
+    cursor: pointer;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#select-sdcard-options > li:hover {
+    color: #211f1f;
+    background-color:#FFF;
+}
+
+#select-sdcard-options > li.active {
+    color:#FFF;
+    background-color: rgba(7, 107, 178, 0.99);
+}
+
+#cam-view-photos {
+    height: 95%;
+    overflow-y:auto;
+    display: none;
+    color:#e1d30f;
+    font-weight: bold;
+}
+
+.cam-single-img {
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 23%;
+    height: 130px;
+    float: left;
+    margin-top: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 5px solid transparent;
+    position: relative;
+}
+
+.cam-single-img-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.66);
+    color:#FFF;
+    padding: 5px;
+    width:15%;
+    text-align: center;
+}
+
+.cam-single-img:not(:last-child){
+    margin-right: 2%;
+}
+
+.cam-single-img:hover {
+    border: 5px solid #e1d30f;
+}
+
+#cam-view-single-photo {
+    height: 95%;
+    overflow-y:auto;
+    display: none;
+}
+
+.cam-view-single-img {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: -10px;
+    text-align: center;
+    margin-bottom:20px;
+}
+
+.cam-view-single-img > img {
+    width: 95%;
+}
+
+.cam-meta-left {
+    float: left;
+    width: 45%;
+    margin-left: 10px;
+}
+
+.cam-meta-right {
+    float: left;
+    width: 48%;
+    margin-left: 10px;
+}
+
+.cam-meta-title {
+    color:#FFF;
+    margin-bottom: 10px;
+}
+
+.cam-meta-title > span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    background-color: #e1d30f;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:#000;
+    cursor: pointer;
+}
+
+.camera-buttons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Camera Buttons */
+
+.camera-buttons > div {
+    position: absolute;
+    cursor: pointer;
+    background-color: rgba(246, 224, 0, 0);
+}
+
+.menu-button {
+    width: 4.5%;
+    height: 5.4%;
+    top: 27%;
+    left: 24.8%;
+}
+
+.delete-button {
+    width: 3.64%;
+    height: 6%;
+    top: 81%;
+    right: 23%;
+}
+
+.photos-button {
+    width: 4%;
+    height: 7%;
+    top: 44%;
+    right: 27.5%;
+}
+
+.take-pic-button {
+    width: 15.8%;
+    height: 16%;
+    top: 19%;
+    left: 33%;
+}
+
+.left-button {
+    width: 2.34%;
+    height: 4%;
+    top: 67.5%;
+    right: 28.5%;
+}
+
+.right-button {
+    width: 2.34%;
+    height: 4%;
+    top: 67.5%;
+    right: 21%;
+}

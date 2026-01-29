@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VicRoads</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app" class="hidden">
+
+    <!-- TOP BAR -->
+    <div class="topbar">
+        <div class="brand">
+            <div class="logo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" role="img">
+                    <path d="M5 17h14v2a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-2z"/>
+                    <path d="M5 17l2-6h10l2 6"/>
+                    <path d="M7 11l1-3h8l1 3"/>
+                    <circle cx="8" cy="17" r="2"/>
+                    <circle cx="16" cy="17" r="2"/>
+                </svg>
+            </div>
+            <div>
+                <h1>VicRoads</h1>
+                <span>Victoria Networks</span>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="nav">
+            <button class="active" data-tab="home"><span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5L12 4l9 7.5"/><path d="M5 10.5v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-7"/></svg></span><span class="label">Home</span></button>
+            <button data-tab="licenses"><span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M7 2h8v4H7z"/><path d="M5 6h14v14H5z"/></svg></span><span class="label">Licenses</span></button>
+            <button data-tab="registration"><span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="7" rx="2"/><path d="M7 14v3"/><path d="M17 14v3"/></svg></span><span class="label">Registration</span></button>
+            <button data-tab="locations"><span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-4.5 7-10a7 7 0 0 0-14 0c0 5.5 7 10 7 10z"/><circle cx="12" cy="11" r="2"/></svg></span><span class="label">Locations</span></button>
+            <button data-tab="tests"><span class="btn-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2v6"/><path d="M15 2v6"/><path d="M5 10h14"/><path d="M12 14v8"/><path d="M8 18h8"/></svg></span><span class="label">Tests</span></button>
+        </div>
+
+        <button class="close" onclick="closeUI()">✕</button>
+        
+        <div class="datetime-display">
+            <div id="current-time" class="time">--:--</div>
+            <div id="current-date" class="date">-- --- ----</div>
+            <div class="timezone">AEDT</div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div id="content">
+
+        <div class="layout">
+            <main class="main">
+
+                <!-- HOME -->
+                <div class="page active" id="home">
+                    <h2>Welcome, <span class="muted" id="player-name">Player</span></h2>
+
+                    <div class="grid two">
+                        <div class="card">
+                            <div class="card-head">
+                                <span class="card-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l2-4h14l2 4v6a1 1 0 0 1-1 1h-1a1 1 0 0 1-1-1v-1H6v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z"/><circle cx="7.5" cy="16.5" r="1.5"/><circle cx="16.5" cy="16.5" r="1.5"/></svg>
+                                </span>
+                                <h3>License Status</h3>
+                            </div>
+                            <div class="card-body-box" id="home-license-list">
+                                <div class="muted">Loading licenses…</div>
+                            </div>                            <a class="link" href="#" onclick="event.preventDefault(); switchTab('licenses')">View All →</a>                        </div>
+
+                        <div class="card">
+                            <div class="card-head">
+                                <span class="card-icon">
+                                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="7" rx="2"/></svg>
+                                </span>
+                                <h3>Vehicle Registration</h3>
+                            </div>
+                            <div class="card-body-box" id="home-vehicle-list">
+                                <div class="muted">No vehicles found.</div>
+                            </div>
+                            <a class="link" href="#" onclick="event.preventDefault(); switchTab('registration')">View All →</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <span class="card-icon">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+                            </span>
+                            <h3>Quick Options</h3>
+                        </div>
+                        <div class="card-body-box">
+                            <div class="grid three">
+                                <div class="card action" onclick="switchTab('licenses')">
+                                    <span>Renew License</span>
+                                </div>
+                                <div class="card action" onclick="switchTab('registration')">
+                                    <span>Vehicle Registration</span>
+                                </div>
+                                <div class="card action" onclick="switchTab('locations')">
+                                    <span>Find DMV Location</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-head">
+                            <span class="card-icon">
+                                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4"/><circle cx="12" cy="16" r="1"/></svg>
+                            </span>
+                            <h3>Helpful Information</h3>
+                        </div>
+                        <div class="card-body-box">
+                            <div class="grid three">
+                                <div class="card muted">
+                                    <h4>Keep Your License Updated</h4>
+                                    <p>Always renew your driver’s license before it expires.</p>
+                                </div>
+                                <div class="card muted">
+                                    <h4>Register Your Vehicle</h4>
+                                    <p>Ensure all your owned vehicles are registered.</p>
+                                </div>
+                                <div class="card muted">
+                                    <h4>Locate Nearby VicRoads Offices</h4>
+                                    <p>Use the "Locations" tab to find VicRoad offices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LICENSES -->
+                <div class="page" id="licenses">
+                    <h2>License Management</h2>
+
+                    <div id="license-list">
+                        <div class="muted">Loading licenses…</div>
+                    </div>
+                </div>
+
+                <!-- REGISTRATION -->
+                <div class="page" id="registration">
+                    <h2>Vehicle Registration</h2>
+
+                    <div class="search-container">
+                        <input type="text" id="vehicle-search" placeholder="Search by plate number..." class="search-input">
+                    </div>
+
+                    <div id="vehicle-list">
+                        <!-- Vehicles will be injected here by the NUI -->
+                        <div class="muted">Loading vehicles…</div>
+                    </div>
+                </div>
+
+                <!-- LOCATIONS -->
+                <div class="page" id="locations">
+                    <h2>VicRoads Locations</h2>
+
+                    <div class="grid two">
+                        <!-- Map View -->
+                        <div class="card">
+                            <div class="card-header">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--green);">
+                                    <circle cx="12" cy="10" r="3"/>
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/>
+                                </svg>
+                                <h3>Map View</h3>
+                            </div>
+                            <div style="text-align: center; padding: 60px 40px;">
+                                <svg viewBox="0 0 24 24" width="64" height="64" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--green); opacity: 0.5; margin-bottom: 16px;">
+                                    <circle cx="12" cy="10" r="3"/>
+                                    <path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/>
+                                </svg>
+                                <h3 style="font-size: 24px; margin-bottom: 8px; color: var(--green);">Coming Soon</h3>
+                                <p class="muted" style="font-size: 14px;">Showing all VicRoads Locations</p>
+                            </div>
+                        </div>
+
+                        <!-- Nearby Locations -->
+                        <div class="card">
+                            <div class="card-header">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--green);">
+                                    <path d="M12 21s7-4.5 7-10a7 7 0 0 0-14 0c0 5.5 7 10 7 10z"/>
+                                    <circle cx="12" cy="11" r="2"/>
+                                </svg>
+                                <h3>Nearby Locations</h3>
+                            </div>
+                            <div id="locations-list" style="margin-top: 16px;">
+                                <!-- Locations will be injected here -->
+                                <div class="muted">Loading locations...</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TESTS -->
+                <div class="page" id="tests">
+                    <h2>License Tests</h2>
+                    <p class="muted" style="margin-bottom: 24px;">Complete the theory test to obtain your license</p>
+
+                    <div class="grid three">
+                        <div class="card test-card">
+                            <div class="test-icon car-icon">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M5 11a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-6z"/>
+                                    <path d="M6 9l1.5-3h9L18 9"/>
+                                    <circle cx="8.5" cy="17" r="1.5"/>
+                                    <circle cx="15.5" cy="17" r="1.5"/>
+                                    <path d="M9 12h6"/>
+                                </svg>
+                            </div>
+                            <h3 style="margin-top: 16px;">Driver License</h3>
+                            <p class="muted" style="font-size: 14px; margin: 8px 0 20px 0;">Standard passenger vehicles including sedans, wagons, and SUVs.</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                <button class="btn green test-theory-btn" data-license="driver">Theory Test</button>
+                                <button class="btn test-practical-btn" data-license="driver">Practical Test</button>
+                            </div>
+                        </div>
+
+                        <div class="card test-card">
+                            <div class="test-icon bike-icon">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="5" cy="18" r="3"/>
+                                    <circle cx="19" cy="18" r="3"/>
+                                    <path d="M9 18h6"/>
+                                    <path d="M12 18v-6l-3-3"/>
+                                    <path d="M15 9h3l1 2-1 1"/>
+                                    <path d="M9 6h3v3"/>
+                                    <path d="M12 9l3 3"/>
+                                </svg>
+                            </div>
+                            <h3 style="margin-top: 16px;">Motorcycle License</h3>
+                            <p class="muted" style="font-size: 14px; margin: 8px 0 20px 0;">Motorcycles, scooters, and two-wheeled motor vehicles.</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                <button class="btn green test-theory-btn" data-license="bike">Theory Test</button>
+                                <button class="btn test-practical-btn" data-license="bike">Practical Test</button>
+                            </div>
+                        </div>
+
+                        <div class="card test-card">
+                            <div class="test-icon truck-icon">
+                                <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="1" y="8" width="14" height="8" rx="1"/>
+                                    <path d="M15 8h2.5l2.5 3v5h-5"/>
+                                    <circle cx="5" cy="18" r="2"/>
+                                    <circle cx="17" cy="18" r="2"/>
+                                    <path d="M3 11h9"/>
+                                </svg>
+                            </div>
+                            <h3 style="margin-top: 16px;">Heavy Vehicle Licence</h3>
+                            <p class="muted" style="font-size: 14px; margin: 8px 0 20px 0;">Heavy vehicles, commercial trucks, and trailers.</p>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                                <button class="btn green test-theory-btn" data-license="truck">Theory Test</button>
+                                <button class="btn test-practical-btn" data-license="truck">Practical Test</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="test-area"></div>
+                </div>
+
+            </main>
+
+            <aside class="sidebar">
+                <div class="card profile">
+                    <div class="profile-header">
+                        <div class="avatar">👤</div>
+                        <div class="profile-info">
+                            <h4 id="driver-name">Player Name</h4>
+                            <div class="muted" id="player-dob">DOB: --/--/----</div>
+                        </div>
+                    </div>
+
+                    <div class="license-block" id="sidebar-license-status">
+                        <div class="row space">
+                            <div class="muted">License Status</div>
+                        </div>
+                        <div class="muted">No licenses found.</div>
+                    </div>
+
+                    <div class="actions">
+                        <button class="btn" id="view-license">View Licenses</button>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

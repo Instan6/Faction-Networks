@@ -1,0 +1,28 @@
+MAP IMAGE SIZE ISSUE
+=====================
+
+The gtav_map.png file (21MB, 6144x9216px) is too large for NUI to load properly.
+
+TO FIX:
+-------
+1. Reduce the image size using an image editor (Photoshop, GIMP, etc.)
+   - Recommended size: 2048x3072 pixels or smaller
+   - Save as PNG or JPG with 75-85% quality
+   - Target file size: under 5MB
+
+2. Replace the current gtav_map.png with the optimized version
+
+3. Restart the resource: ensure vn_vicroads
+
+ALTERNATIVE:
+------------
+The current styled fallback map works perfectly and shows:
+- Clean dark blue gradient background
+- Grid overlay with compass directions
+- All office location markers
+- Player position marker
+- Full drag and zoom functionality
+
+To keep using the fallback (recommended), set the texture path to null in:
+resources/[scripts]/vn_vicroads/client/main.lua
+Line ~180: cb({ texture = nil })

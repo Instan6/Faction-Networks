@@ -1,0 +1,24 @@
+{
+  "cant_cuff":{
+    "title": "Impossível algemar!",
+    "subtitle": "Falta-te um item: %s !"
+  },
+  "try_escape": "A pessoa pode tentar escapar das algemas!",
+  "escaped": "A pessoa conseguiu escapar das algemas!",
+  "cant_uncuff": {
+    "title": "Impossível remover algemas!",
+    "subtitle": "Falta-te um item ou a opção está desativada!"
+  },
+  "unable_uncuff": {
+    "title": "Impossível cortar algemas!",
+    "subtitle": "Não usaste a ferramenta com força suficiente!"
+  },
+  "target": {
+    "types": {
+      "uncuff": "Desalgemar",
+      "forceRemove": "Cortar algemas",
+      "lockPick": "Lock pick algemas"
+    },
+    "cuff_to": "Algemar a"
+  }
+}

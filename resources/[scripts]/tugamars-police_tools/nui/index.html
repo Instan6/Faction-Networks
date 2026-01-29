@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/nui.js"></script>
+    <link rel="stylesheet" href="assets/css/camera.css">
+    <link rel="stylesheet" href="assets/css/tintmeter.css">
+    <link rel="stylesheet" href="assets/css/pager.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            overflow: hidden;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .float-right {
+            float: right;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="camera-ui">
+
+    </div>
+
+    <div class="camera-lcd">
+        <div class="camera-buttons">
+            <div class="menu-button" onclick="cameraButton('sdcard-menu')"></div>
+            <div class="delete-button" onclick="cameraButton('delete-photo')"></div>
+            <div class="photos-button" onclick="cameraButton('view-photos')"></div>
+            <div class="take-pic-button" onclick="cameraButton('take-pic')"></div>
+            <div class="left-button" onclick="cameraButton('prev-photo')"></div>
+            <div class="right-button" onclick="cameraButton('next-photo')"></div>
+        </div>
+        <div class="camera-lcd-bg"></div>
+        <div class="camera-lcd-inner" id="camera-lcd-inner">
+            <div id="cam-select-sd-card">
+                <h4>Select SD Card</h4>
+                <ul id="select-sdcard-options">
+                </ul>
+            </div>
+
+            <div id="cam-view-photos">
+            </div>
+
+            <div id="cam-view-single-photo">
+                <div class="cam-view-single-img">
+                    <img src="#" id="cam-view-single-img">
+                </div>
+                <div class="cam-view-single-metadata">
+                    <div class="cam-meta-left" id="cam-meta-left">
+                        <div class="cam-meta-title"><span>Date:</span> </div>
+                        <div class="cam-meta-title"><span>Zoom:</span> </div>
+                        <div class="cam-meta-title"><span>Format:</span> </div>
+                    </div>
+                    <div class="cam-meta-right">
+                        <div class="cam-meta-title"><span>Image URL:</span></div>
+                        <input type="text" style="width: 100%;" value="https://cdn.discordapp.com/attachments/828792793786482710/829741558617341952/unknown.png" id="cam-view-url">
+
+                        <div class="btn" onclick="copyToClipboard()">Copy URL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tintmeter-ui">
+        <div class="tintmeter-text" id="tintmeter-text">---</div>
+        <div class="tintmeter-btn" id="tintmeter-btn" onclick="startTintCheck()"></div>
+    </div>
+
+    <div id="pager">
+        <div id="text">
+            AAAAAAAAAAAAAAAAAAAAAAAAAA BBBBB CDDDDD
+        </div>
+    </div>
+
+    <script type="text/javascript" src="assets/js/camera.js"></script>
+    <script type="text/javascript" src="assets/js/tintmeter.js"></script>
+    <script type="text/javascript" src="assets/js/pager.js"></script>
+</body>
+</html>

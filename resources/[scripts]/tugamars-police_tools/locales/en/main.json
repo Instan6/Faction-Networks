@@ -1,0 +1,13 @@
+{
+  "escort": "Escort",
+  "unescort": "Stop Escorting",
+  "target": {
+    "sitcar": {
+      "seat_person": "Seat person - %s",
+      "unseat_person": "Unseat person - %s",
+      "driver_seat": "Driver seat",
+      "passanger_back_seat": "P. back seat",
+      "passanger_front_seat": "P. front seat"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "cant_cuff":{
+    "title": "Impossível de colocar shackles!",
+    "subtitle": "Falta-te um item: %s !"
+  },
+  "unable_uncuff": {
+    "title": "Impossível remover shackles!",
+    "subtitle": "Não usaste a ferramenta com força suficiente!"
+  },
+  "target": {
+    "shackle": "Colocar shackles",
+    "types": {
+      "uncuff": "Remover shackles",
+      "forceRemove": "Cortar shackles",
+      "lockPick": "Lock pick shackles"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "missing_item":"You don't have a window tint meter!",
+  "target":{
+    "measure_window_tint": "Measure Window Tint"
+  },
+}

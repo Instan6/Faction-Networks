@@ -1,0 +1,22 @@
+{
+  "patdown": "Revistar",
+  "patting_down":"Alguém te está a revistar!",
+  "input": {
+    "title": "Revista - O que é que encontram?",
+    "item": "Item %s",
+    "item_desc": "Deixar em branco caso não encontrem nada"
+  },
+  "found": "Encontraste o que se parece com: \n\n",
+  "concluded": "Revista concluída!",
+  "nothing": "Não encontraste nada.",
+  "categories": {
+    "long_rifle": "Arma grande",
+    "pistol": "Arma pequena",
+    "smg": "Arma média",
+    "melee": "Melee",
+    "shotgun": "Arma média",
+    "throwable": "Parece uma granada...",
+    "other": "Algo desconhecido",
+    "heavy_weapon": "Arsenal"
+  }
+}

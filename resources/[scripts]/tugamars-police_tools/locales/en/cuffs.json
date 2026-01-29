@@ -1,0 +1,24 @@
+{
+  "cant_cuff":{
+    "title": "Can't cuff!",
+    "subtitle": "You are missing a item: %s !"
+  },
+  "try_escape": "The person can try to escape cuffs!",
+  "escaped": "The person was able to escape the cuffs!",
+  "cant_uncuff": {
+    "title": "Can't uncuff",
+    "subtitle": "You are not able to uncuff due to a missing item or option being disabled!"
+  },
+  "unable_uncuff": {
+    "title": "Unable to uncuff",
+    "subtitle": "You didn't use it hard enough"
+  },
+  "target": {
+    "types": {
+      "uncuff": "Uncuff",
+      "forceRemove": "Cut cuffs",
+      "lockPick": "Lock pick cuffs"
+    },
+    "cuff_to": "Cuff to",
+  }
+}

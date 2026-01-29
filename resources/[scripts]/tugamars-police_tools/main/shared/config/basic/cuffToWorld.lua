@@ -1,0 +1,10 @@
+Config.cuffToWorld = {
+    type="size", -- size or object
+    size = {
+        max=5.0,
+        min=0.2,
+    },
+    objectList={
+        'prop_streetlight_01','prop_streetlight_01b','prop_streetlight_02','prop_streetlight_03','prop_streetlight_03b','prop_streetlight_03c','prop_streetlight_03d','prop_streetlight_03e','prop_streetlight_04','prop_streetlight_05','prop_streetlight_05_b','prop_streetlight_06','prop_streetlight_07a','prop_streetlight_07b','prop_streetlight_08','prop_streetlight_09','prop_streetlight_10','prop_streetlight_11a','prop_streetlight_11b','prop_streetlight_11c','prop_streetlight_12a','prop_streetlight_12b','prop_streetlight_14a','prop_streetlight_15a','prop_streetlight_16a'
+    }
+};

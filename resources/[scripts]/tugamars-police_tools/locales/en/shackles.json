@@ -1,0 +1,18 @@
+{
+  "cant_cuff":{
+    "title": "Can't shackle!",
+    "subtitle": "You are missing a item: %s !"
+  },
+  "unable_uncuff": {
+    "title": "Unable to uncuff",
+    "subtitle": "You didn't use it hard enough"
+  },
+  "target": {
+    "shackle": "Put shackles on",
+    "types": {
+      "uncuff": "Remove shackles",
+      "forceRemove": "Cut shackles",
+      "lockPick": "Lock pick shackles"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "patdown": "Patdown",
+  "patting_down":"Someone is patting you down!",
+  "input": {
+    "title": "Patdown - What does the person find on you?",
+    "item": "Item %s",
+    "item_desc": "Leave blank if nothing"
+  },
+  "found": "You've found what looks like: \n\n",
+  "concluded": "Patdown concluded!",
+  "nothing": "Nothing was found on the person.",
+  "categories": {
+    "long_rifle": "Long Weapon",
+    "pistol": "Small Weapon",
+    "smg": "Medium Weapon",
+    "melee": "Melee",
+    "shotgun": "Medium Weapon",
+    "throwable": "Feels like a grenade",
+    "other": "Something unknown",
+    "heavy_weapon": "Arsenal"
+  }
+}
